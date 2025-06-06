@@ -35,7 +35,7 @@ public class day_6_SimpleCalculator {
         double num1 = sc.nextDouble();
         System.out.print("Enter Second Number: ");
         double num2 = sc.nextDouble();
-        System.out.println("Operator(+): for addition\nOperator(-): for Subtraction\nOperator(/): for division");
+        System.out.println("Operator(+): for addition\nOperator(-): for Subtraction\nOperator(/): for division\nOperator(*): for multiplication");
         System.out.println("Operator(%): for remainder\nOperator(^): for power");
         System.out.print("Enter Operator: ");
         String op = sc.next();
