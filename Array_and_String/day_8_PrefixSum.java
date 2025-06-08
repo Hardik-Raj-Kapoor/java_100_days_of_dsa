@@ -42,9 +42,9 @@ public class day_8_PrefixSum {
         for(int i = 0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
-        System.out.println();
         PrefixSum obj = new PrefixSum();
         obj.sum(arr);
+        System.out.println(" ");
         System.out.println("Enter for subarray prefix sum: ");
         System.out.print("From: ");
         int l=sc.nextInt();
