@@ -16,7 +16,7 @@ class PrefixSum{
         }
         
     }
-    public int sub(int[] prefix, int l, int r) {
+    public int sub(int l, int r) {
         if (l == 0)
             return prefix[r];
         else
@@ -50,7 +50,7 @@ public class day_8_PrefixSum {
         int l=sc.nextInt();
         System.out.print("To:");
         int r=sc.nextInt();
-        System.out.println(obj.sub(obj.prefix,l,r));
+        System.out.println(obj.sub(l,r));
         sc.close();
     }
 }
