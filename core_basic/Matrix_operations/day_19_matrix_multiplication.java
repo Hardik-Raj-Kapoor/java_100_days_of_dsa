@@ -13,7 +13,7 @@ public class day_19_matrix_multiplication {
     
         for(int i = 0;i<rows;i++){
             for(int j=0;j<Columns;j++){
-                System.out.print("Enter element at "+"["+i+","+j+"]: ");
+                System.out.print("Matrix A: Enter element at "+"["+i+","+j+"]: ");
                     int element = sc.nextInt();
                     matrixA[i][j] = element;
             }
@@ -21,7 +21,7 @@ public class day_19_matrix_multiplication {
 
         for(int i = 0;i<rows;i++){
             for(int j=0;j<Columns;j++){
-                System.out.print("Enter element at "+"["+i+","+j+"]: ");
+                System.out.print("Matrix B: Enter element at "+"["+i+","+j+"]: ");
                     int element = sc.nextInt();
                     matrixB[i][j] = element;
             }
