@@ -13,6 +13,7 @@ class Permutation_1{
         Set<Integer> seen = new HashSet<>();
         for(int i = index;i<num.length;i++){
             if(seen.contains(num[i]))continue;
+            seen.add(num[i]);
             swap(num,index,i);
             permute(num, index+1, result);
             swap(num,index,i);
