@@ -1,37 +1,10 @@
 package recursion_and_backtracking;
 
 import java.util.*;
-public class day_22_N_Queens {
-    public static void main(String[] args) {
-        int n = 4;
-        List<List<String>> Solutions = SolveNQueens(n);
 
-        for(List<String> solution : Solutions){
-            for(String row: solution){
-                System.out.println(row);
-            }
-        }
-    }
-
-
-    // Solves N-Queens and returns list of board arrangements
-    public static List<List<String>> SolveNQueens(int n){
-        List<List<String>> result = new ArrayList<>();
-        char[][] board = new char[n][n];
-
-
-        //initializing board with '.'
-        for (char[] row : board){
-            Arrays.fill(row,'.');
-        }
-        
-        solve(0,board,result,n);
-        return result;
-    }
-
-
+class N_Qeens_fns{
     // Recursive backtracking function
-    public static void solve(int row, char[][] board,List<List<String>> result, int n){
+    public void solve(int row, char[][] board,List<List<String>> result, int n){
         // Base case: All queens placed
         if(row== n){
             result.add(constructBoard(board));
@@ -74,6 +47,38 @@ public class day_22_N_Queens {
         for (char[] row : board) {
             result.add(new String(row));
         }
+        return result;
+    }
+}
+
+
+
+public class day_22_N_Queens {
+    public static void main(String[] args) {
+        int n = 4;
+        List<List<String>> Solutions = SolveNQueens(n);
+
+        for(List<String> solution : Solutions){
+            for(String row: solution){
+                System.out.println(row);
+            }
+            System.out.println();
+        }
+    }
+
+
+    // Solves N-Queens and returns list of board arrangements
+    public static List<List<String>> SolveNQueens(int n){
+        List<List<String>> result = new ArrayList<>();
+        char[][] board = new char[n][n];
+
+
+        //initializing board with '.'
+        for (char[] row : board){
+            Arrays.fill(row,'.');
+        }
+        N_Qeens_fns obj = new N_Qeens_fns();
+        obj.solve(0,board,result,n);
         return result;
     }
     }
