@@ -10,6 +10,7 @@ if(freq.containsKey(key)) value = map.getKey();
 else value = defaultValue;
  */
 
+ 
 class string_freq_count{
     public String freq_count(String input){
         HashMap<Character, Integer> freq = new HashMap<>();

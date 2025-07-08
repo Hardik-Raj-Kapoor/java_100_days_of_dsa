@@ -2,7 +2,14 @@ package hashmap_hashset;
 import java.util.Scanner;
 import java.util.HashMap;
 
-class array_freq_count{
+/*
+ used: getOrDefault(key, defaultValue); 
+ which is short for
+if(freq.containsKey(key)) value = map.getKey();
+else value = defaultValue;
+ */
+
+ class array_freq_count{
     public void freq_count(int[] arr){
         HashMap<Integer,Integer> freq = new HashMap<>();
         for(int i: arr){
