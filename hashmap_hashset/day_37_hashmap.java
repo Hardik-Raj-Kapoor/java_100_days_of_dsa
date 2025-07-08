@@ -4,12 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-set.add(value); Adds value if not present.
-set.remove(value); Removes value if present.
-set.contains(value); Checks if value is present.
-set.size(); Returns number of elements.
-set.clear(); Empties the set.
-set.isEmpty(); Checks if set is empty.
+Insert: map.put(key, value); Adds or updates the value for the given key.
+Get: map.get(key); Retrieves the value for the given key. Returns null if not present.
+Remove: map.remove(key); Removes the mapping for the key.
+Contains Key: map.containsKey(key); Checks if the key exists.
+Contains Value: map.containsValue(value); Checks if the value exists.
+Size: map.size(); Returns number of entries.
+Clear: map.clear(); Removes all entries.
+Is Empty: map.isEmpty(); Checks if map is empty.
  */
 public class day_37_hashmap {
     public static void main(String[] args) {
