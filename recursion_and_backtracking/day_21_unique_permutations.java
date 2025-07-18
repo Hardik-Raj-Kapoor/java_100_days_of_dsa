@@ -1,4 +1,3 @@
-package recursion_and_backtracking;
 import java.util.*;
 class Permutation_1{
     public void permute(int[] num,int index, List<List<Integer>> result){

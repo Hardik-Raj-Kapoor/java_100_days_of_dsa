@@ -1,4 +1,3 @@
-package recursion_and_backtracking;
 
 public class day_22_N_Queens_without_ArrayList {
     static int N = 4;

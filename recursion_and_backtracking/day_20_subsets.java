@@ -1,5 +1,3 @@
-package recursion_and_backtracking;
-
 import java.util.*;
 
 class  subset_1{

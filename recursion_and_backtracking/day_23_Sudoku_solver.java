@@ -1,5 +1,3 @@
-package recursion_and_backtracking;
-
 class size{
     public final int SIZE = 9;
 }

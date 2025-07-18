@@ -1,5 +1,3 @@
-package recursion_and_backtracking;
-
 import java.util.*;
 class  binary_string_3{
     public void generate(int n, int k, String current, int onesCount) {

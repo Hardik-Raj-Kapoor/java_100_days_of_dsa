@@ -1,4 +1,3 @@
-package recursion_and_backtracking;
 import java.util.Scanner;
 
 class odd_even{
